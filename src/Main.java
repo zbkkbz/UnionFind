@@ -30,15 +30,27 @@ public class Main {
     public static void main(String[] args) {
         // write your code here
 
-        int size = 100000;
-        int m = 100000;
+        int size = 10000000;//千万级别
+        int m = 10000000;//千万级别
+/*
         UnionFind1 unionFind1 = new UnionFind1(size);
         System.out.println("UnionFind1"+testUF(unionFind1, m));
 
         UnionFind2 unionFind2 = new UnionFind2(size);
         System.out.println("UnionFind2"+testUF(unionFind2, m));
+*/
 
         UnionFind3 unionFind3 = new UnionFind3(size);
-        System.out.println("UnionFind2"+testUF(unionFind3, m));
+        System.out.println("UnionFind3"+testUF(unionFind3, m));
+
+        UnionFind4 unionFind4 = new UnionFind4(size);
+        System.out.println("UnionFind4"+testUF(unionFind4, m));
+
+        UnionFind5 unionFind5 = new UnionFind5(size);
+        System.out.println("UnionFind5"+testUF(unionFind5, m));
+
+        UnionFind6 unionFind6 = new UnionFind6(size);
+        System.out.println("UnionFind6"+testUF(unionFind6, m));
+
     }
 }
