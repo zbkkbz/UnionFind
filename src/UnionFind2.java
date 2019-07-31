@@ -44,6 +44,16 @@ public class UnionFind2 implements UF{
         return p;
     }
 
+    //find()方法递归实现
+    private int findR(int p){
+        if (p==parent[p])
+            return p;
+        p=parent[p];
+        return findR(p);
+    }
+
+
+
     //查看元素p,q是否属于同一集合,
     //因为使用find方法,所以此方法时间复杂度也是O(h)
     @Override
